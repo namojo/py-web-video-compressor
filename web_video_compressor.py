@@ -8,7 +8,7 @@ import uuid
 from werkzeug.utils import secure_filename
 
 app = Flask(__name__)
-app.config['MAX_CONTENT_LENGTH'] = 500 * 1024 * 1024  # 500MB 제한
+app.config['MAX_CONTENT_LENGTH'] = 2500 * 1024 * 1024  # 500MB 제한
 app.config['UPLOAD_FOLDER'] = 'uploads'
 app.config['OUTPUT_FOLDER'] = 'outputs'
 

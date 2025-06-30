@@ -148,8 +148,8 @@ video-compressor/
 # 포트 변경
 app.run(host='0.0.0.0', port=5001, debug=True)
 
-# 최대 파일 크기 변경 (현재: 500MB)
-app.config['MAX_CONTENT_LENGTH'] = 500 * 1024 * 1024
+# 최대 파일 크기 변경 (현재: 2500MB)
+app.config['MAX_CONTENT_LENGTH'] = 2500 * 1024 * 1024
 
 # 업로드/출력 폴더 변경
 app.config['UPLOAD_FOLDER'] = 'uploads'
@@ -182,7 +182,7 @@ app.run(host='0.0.0.0', port=5002, debug=True)
 
 **3. 파일 업로드 실패**
 ```
-해결: 파일 크기 확인 (500MB 제한)
+해결: 파일 크기 확인 (2500MB 제한)
 지원 형식 확인 (MP4, AVI, MOV, MKV, WMV, FLV, WebM)
 ```
 
@@ -207,7 +207,7 @@ app.run(host='0.0.0.0', port=5002, debug=True)
 
 ## 🔒 보안 고려사항
 
-- 업로드 파일 크기 제한 (500MB)
+- 업로드 파일 크기 제한 (2500MB)
 - 파일 형식 검증
 - 임시 파일 자동 정리
 - 안전한 파일명 처리
